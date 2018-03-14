@@ -20,6 +20,7 @@ end
 
   def self.cl_search(input)
     doc = Nokogiri::HTML(open('https://www.govtrack.us/congress/votes'))
-    doc.css('.result-item')
+    list = doc.css('.result-item')
+    list
 end
 end
