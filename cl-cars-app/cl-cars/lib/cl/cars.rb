@@ -20,7 +20,7 @@ end
 
   def self.cl_search(input)
     doc = Nokogiri::HTML(open('https://raleigh.craigslist.org/search/cta'))
-    
+    list = doc.css('.result-title hdrlnk')
     binding.pry
 
 end
