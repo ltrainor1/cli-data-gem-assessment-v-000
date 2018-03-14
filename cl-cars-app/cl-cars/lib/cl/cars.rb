@@ -19,10 +19,9 @@ class Cars
 end
 
   def self.cl_search(input)
-    doc = Nokogiri::HTML(open('https://www.govtrack.us/congress/votes'))
-    list = doc.css('div.results')
-    list2 = list.css('div.result_item')
+    doc = Nokogiri::HTML(open('https://raleigh.craigslist.org/search/cta'))
+    
     binding.pry
-    list2
+
 end
 end
