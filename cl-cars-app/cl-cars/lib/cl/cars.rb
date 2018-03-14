@@ -1,6 +1,7 @@
 require "cl/cars/version"
 require 'nokogiri'
 require 'pry'
+require 'open-uri'
 
 class Cars
   def call
